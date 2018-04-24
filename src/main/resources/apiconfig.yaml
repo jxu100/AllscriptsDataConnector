@@ -1,0 +1,12 @@
+appName:
+	cisco.AppTest.TestApp
+appUserID:
+	jmedici
+
+#Map Properties
+touchworks:
+	actionMap:
+		getSchedule:
+			{"Action":"getSchedule", "Appname":${appName}, "AppUserID":${appUserID}, "Token":%token%, "Parameter1":"01/01/2015|12/31/2017", "Parameter2":"", "Parameter3":"", "Parameter4":"", "Parameter5":"", "Parameter6":"", "Data":""}
+		getTask:
+			{"Action":"GetTaskListByView", "Appname":${appName}, "AppUserID":${appUserID}, "Token":%token%, "Parameter1":"Current Pt - All (last 6 months)", "Parameter2":"", "Parameter3":"", "Parameter4":"", "Parameter5":"", "Parameter6":"", "Data":""}
