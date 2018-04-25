@@ -23,15 +23,15 @@ This is a Spring Boot Application for calling Allscripts Unity APIs from MicroSt
 * use : mvn clean install -DskipTests to build without tests
 
 
-### Run
+### Run on MicroStrategy Intelligence Server
 ```
-java -jar AllscriptsDataConnector-1.0.0.jar
+nohup java -jar AllscriptsDataConnector-1.0.0.jar &
 ```
-* recommend to run as a daemon process on your specific platform.
+* recommend to run as a daemon process on the Intelligence Server.
 
 ### Access Allscripts Data Connector from MicroStrategy
 
-* On MicroStrategy Create new data source -> Data From URL, specify url as follows:
+* On MicroStrategy Web dashboard: Create new data source -> Data From URL, specify url as follows:
 URL: http://localhost:5002/{emr}/{Action}?PatientID=?&Parameter1=?&Parameter2=?&Parameter3=?&Parameter4=?&Parameter5=?&Parameter6=?&Data=?
 * {emr} is either tw for TouchWorks APIs or pm for Practice Management APIS
 * {Action} is specified in Allscripts APIs. All parameters for corresponding action are specified in the Allscripts API document.
